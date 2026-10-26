@@ -206,8 +206,8 @@
       margin-top: 13px;
       padding: 4px 8px;
       border-radius: 7px;
-      background: #f0f2f6;
-      color: #7b8798;
+      background: #fff0f0;
+      color: #c62828;
       font-size: 10px;
       font-weight: 650;
     }
@@ -348,9 +348,9 @@
           { name: 'HolidayRequest', description: 'ส่งคำขอวันหยุดและติดตามสถานะ', url: 'https://madeenahice.github.io/HolidayRequest/', icon: 'calendar', color: '#c34f89', tint: '#ffdaeb', cardBg: '#fff0f6', cardBorder: '#edb5ce' },
           { name: 'ลงชื่อเข้าร่วมกิจกรรม', description: 'ลงทะเบียนเข้าร่วมกิจกรรม', url: 'https://script.google.com/macros/s/AKfycbxQ8MRDZMjn81PO27EvdSGH04LAA42KRRwPQRE9zNvERgSYH2ihh_jxpO9DViiqkRpvxg/exec', icon: 'event', color: '#e27a24', tint: '#fff2e5' },
           { name: 'ครุภัณฑ์', description: 'ข้อมูลและรายการครุภัณฑ์', url: 'https://script.google.com/macros/s/AKfycbzcJVFNcM0a23IToI0_aGoBzBZJFpRg0kBzJYg1Gu31RhUfVZteGFZeSk7EuT7Y-XIC5g/exec', icon: 'asset', color: '#7355d8', tint: '#f0edff' },
+          { name: 'CheckTimescan', description: 'ตรวจสอบเวลาและรายการสแกน', url: 'https://madeenahice.github.io/CheckTimescan/', icon: 'clock', color: '#168c91', tint: '#e7f7f7' },
           { name: 'สรุปประชุม', description: 'บันทึกและสรุปการประชุม', icon: 'minutes', color: '#2677c9', tint: '#eaf3ff' },
-          { name: 'CSSD', description: 'ระบบงาน CSSD', icon: 'cssd', color: '#d45575', tint: '#fff0f3' },
-          { name: 'CheckTimescan', description: 'ตรวจสอบเวลาและรายการสแกน', url: 'https://madeenahice.github.io/CheckTimescan/', icon: 'clock', color: '#168c91', tint: '#e7f7f7' }
+          { name: 'CSSD', description: 'ระบบงาน CSSD', icon: 'cssd', color: '#d45575', tint: '#fff0f3' }
         ]
       },
       {
@@ -404,7 +404,7 @@
       if (!app.url) {
         const pending = document.createElement('span');
         pending.className = 'pending-label';
-        pending.textContent = 'รอเพิ่มลิงก์';
+        pending.textContent = 'Pending...';
         card.append(pending);
       }
       return card;
