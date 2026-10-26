@@ -236,9 +236,14 @@
 
     @media (max-width: 640px) {
       .page { width: min(100% - 28px, 520px); }
-      .topbar { padding: 18px 0; }
+      .topbar { padding: 10px 0 6px; }
+      .brand { gap: 9px; }
+      .brand-name { font-size: 14px; }
       .today { display: none; }
-      .hero { align-items: stretch; flex-direction: column; padding: 34px 0 20px; }
+      .hero { align-items: stretch; flex-direction: column; gap: 14px; padding: 12px 0 8px; }
+      .eyebrow { margin-bottom: 4px; font-size: 10px; line-height: 1.4; letter-spacing: 1px; }
+      h1 { font-size: 26px; line-height: 1.35; letter-spacing: -.5px; }
+      .hero-copy { margin-top: 5px; font-size: 12px; line-height: 1.5; }
       .search-wrap { width: 100%; }
       .app-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px; }
       .app-card { min-height: 164px; padding: 15px; border-radius: 15px; }
@@ -261,7 +266,11 @@
     a.app-card:hover { border-color: #d6bddf; }
     .search:focus { border-color: #bd9dce; box-shadow: 0 0 0 4px #9670ad18; }
     a.app-card:focus-visible, .search:focus-visible { outline-color: #9670ad80; }
-    @media (max-width: 640px) { .app-icon { width: 64px; height: 64px; border-radius: 19px; } .app-icon > svg { width: 61px; height: 61px; } }
+    @media (max-width: 640px) {
+      .brand-mark, .brand-mark img { width: 38px; height: 38px; border-radius: 12px; }
+      .app-icon { width: 64px; height: 64px; border-radius: 19px; }
+      .app-icon > svg { width: 61px; height: 61px; }
+    }
     @media (prefers-reduced-motion: reduce) { .app-card, .app-icon > svg, .open-icon { transition: none; } }
   </style>
 </head>
